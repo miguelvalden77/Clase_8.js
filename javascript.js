@@ -1,5 +1,51 @@
 
+// filter -> 
+let numeros = [23, 4, 67, 89, 12, 18, 9]
 
+let newArr = numeros.filter((num)=>{
+    if(num > 20){
+        return num
+    }
+})
+
+console.log(newArr)
+
+let people = [
+    {
+        name: "Juanpe",
+        age: 19
+    },
+    {
+    name: "Borja",
+        age: 21
+    },
+    {
+        name: "Lucía",
+        age: 12
+    },
+    {
+        name: "Illita",
+        age: 2
+    },
+    {
+        name: "Miguel",
+        age: 47
+    }
+]
+
+const filterAge = (arr)=>{
+
+    let newArr = arr.filter((e)=>{
+        if(e.age >= 18){
+            return e
+        }
+    })
+
+    return newArr
+
+}
+
+console.log(filterAge(people))
 
 
 // filter
@@ -11,6 +57,7 @@
 
 
     // 3. Haz una función que reciba como parámetro un array de strings y devuelva otro array con los strings que tengan una longitud de al menos 6 caracteres.
+    let equipos = ["Sevilla", "Betis", "Getafe", "Real Madrid", "Barça", "Espanyol"]
 
 
     // 4. Dado un array de objetos, haz una función que devuelva otro array con las personas que tengan 18 años de edad o más.
